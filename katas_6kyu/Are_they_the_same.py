@@ -1,9 +1,6 @@
 def comp(array1, array2):
     
-    if not (len(array1) == len(array2)):
-        return False
-    
-    if not (array1 and array2):
+    if array1 == None or array2 == None:
         return False
     
     for i in array1:
@@ -40,7 +37,7 @@ if __name__ == "__main__":
     a5= []
     a6 = []
 
-    if not comp(a5, a6):
+    if comp(a5, a6):
         print ("Test case passed")
     else:
         print ("Test case not passed")
