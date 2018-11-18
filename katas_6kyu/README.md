@@ -1,2 +1,2 @@
 # Katas_Codewars
-Distintos katas de Codewars
+### 6 kyu Katas
