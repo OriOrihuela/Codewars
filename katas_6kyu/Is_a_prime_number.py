@@ -18,11 +18,11 @@ if __name__ == "__main__":
     # TEST CASES #
 
 
-    print(is_prime(0), '0 is not prime')
+    print(is_prime(0), ', 0 is not prime')
     #>>> "0 is not prime"
-    print(is_prime(1), '1 is not prime')
+    print(is_prime(1), ', 1 is not prime')
     #>>> "1 is not prime"
-    print(is_prime(2), '2 is prime')
+    assert(is_prime(2))
     #>>> "2 is prime"
     print(is_prime(77), ', 77 is not prime')
     #>>> "77 is not prime"
