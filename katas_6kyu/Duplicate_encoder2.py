@@ -16,5 +16,5 @@ if __name__ == "__main__":
     # CASE TEST #
 
 
-    print(duplicate_encode("din"), ", should return (((")
-    print(duplicate_encode("recede")," should return ()()()")
+    assert(duplicate_encode("din"))
+    assert(duplicate_encode("recede"))
