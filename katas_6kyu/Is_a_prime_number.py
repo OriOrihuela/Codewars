@@ -5,7 +5,7 @@ Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 th
 def is_prime(number):
     if number in (0, 1):
         return False
-    for num in range(2, int(number ** 0.5)+1):
+    for num in range(2, int(number ** 0.5) + 1):
         if number % num == 0:
             return False
     return True
