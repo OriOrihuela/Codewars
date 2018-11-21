@@ -7,35 +7,44 @@ Therefor the dictionary returned should contain exactly 4 key/value pairs.
 and the resulting dictionary should never contain fractions of a coin.'''
 
 def loose_change(cents):
-    cents = int(cents)
-    cambio = 0
-    dictionary = {"Pennies" : 1, "Nickels" : 5, "Dimes" : 10, "Quarters" : 25}
-    noChange = {"Pennies" : 0, "Nickels" : 0, "Dimes" : 0, "Quarters" : 0}
-    
+    coins = {
+        'Nickels': 5,
+        'Pennies': 1,
+        'Dimes': 10,
+        'Quarters': 25
+    }
+
+    result = {
+        'Nickels': 0,
+        'Pennies': 0,
+        'Dimes': 0,
+        'Quarters': 0
+    }
+
     if cents <= 0:
-        return noChange
 
-    if cents >= 25:
-        dictionary["Quarters"] = int(cents / 25)
-        cambio = cents % 25
-    else:
-        dictionary["Quarters"] = 0
+        return result
 
-    if cambio >= 10:
-        dictionary["Dimes"] = int(cambio / 10)
-        cambio = cambio % 10
-    else:
-        dictionary["Dimes"] = 0
 
-    if cambio >= 5:
-        dictionary["Nickels"] = int(cambio / 5)
-        cambio = cambio % 5
-    else:
-        dictionary["Nickels"] = 0
-    if cambio >= 1:
-        dictionary["Pennies"] = int(cambio / 1)
-        cambio = cambio % 1
-    return dictionary
+    while cents >= 1:
+
+        if cents >= coins['Quarters']:
+            result['Quarters'] += 1
+            cents -= coins['Quarters']
+
+        elif cents >= coins['Dimes']:
+            result['Dimes'] += 1
+            cents = cents - coins['Dimes']
+
+        elif cents >= coins['Nickels']:
+            result['Nickels'] += 1
+            cents = cents - coins['Nickels']
+
+        elif cents >= coins['Pennies']:
+            result['Pennies'] += 1
+            cents = cents - coins['Pennies']
+
+    return result
 
 
 if __name__ == "__main__":
