@@ -9,15 +9,17 @@ def infected_zeroes(list):
     if list[0] == 0 and len(list) == 1:
         return 0
 
-    contador = 0
+    pos = 0
     turns = 0
-    while contador < len(list) and list.count(0) != len(list):
-        if list[contador] == 0:
-            list[contador - 1] = 0
-            list[contador + 1] = 0
+    while pos < len(list) and list.count(0) != len(list):
+        
+        if list[pos] == 0:
+            list[pos + 1] = 0
+            if list.count(0) == len(list):
+                return turns
             turns += 1
-        contador += 1
-    return turns - 1
+        pos += 1
+    return turns
 
 if __name__ == "__main__":
     
@@ -28,3 +30,4 @@ if __name__ == "__main__":
     assert infected_zeroes([0]) == 0
     assert infected_zeroes([0,1,1,0]) == 1
     assert infected_zeroes([0,1,1,1,0]) == 2
+    assert infected_zeroes([0,1,1,1]) == 3
