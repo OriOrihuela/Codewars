@@ -25,39 +25,29 @@ if __name__ == "__main__":
     a1 = [121, 144, 19, 161, 19, 144, 19, 11]
     a2 = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
 
-    if comp(a1, a2):
-        print ("Test case passed")
-    else:
-        print ("Test case not passed")
+    assert comp(a1, a2)
+        
 
     a3 = [81, 99, 34, 11]
     a4 = [81*81, 99*99, 34*34, 44*44]
 
-    if not comp(a3, a4):
-        print ("Test case passed")
-    else:
-        print ("Test case not passed")
+    assert not comp(a3, a4)
+        
 
     a5= []
     a6 = []
 
-    if comp(a5, a6):
-        print ("Test case passed")
-    else:
-        print ("Test case not passed")
+    assert comp(a5, a6)
+        
 
     a7 = [121, 144, 19, 11]
     a8 = [11*11, 121*121, 144*144, 19*19]
 
-    if comp(a7, a8):
-        print ("Test case passed")
-    else:
-        print ("Test case not passed")
+    assert comp(a7, a8)
+        
 
     a9 = [12, 15, 77, 56, 87]
     a10 = [12*12, 12*12, 77*77, 87*87, 56*56]
 
-    if not comp(a9, a10):
-        print ("Test case passed")
-    else:
-        print ("Test case not passed")
+    assert not comp(a9, a10)
+        
