@@ -17,6 +17,11 @@ def infected_zeroes(list):
             list[pos + 1] = 0
             pos += 1
         
+        if list[pos] == 1:
+            list.reverse()
+            list[pos + 1] = 0
+            pos += 1
+        
         if list[-1] == 0 and list[-2] == 1:
             list[-2] = 0
         
@@ -37,3 +42,4 @@ if __name__ == "__main__":
     assert infected_zeroes([0,1,1,0]) == 1
     assert infected_zeroes([0,1,1,1,0]) == 2
     assert infected_zeroes([0,1,1,1]) == 3
+    assert infected_zeroes([1,1,1,0]) == 3
