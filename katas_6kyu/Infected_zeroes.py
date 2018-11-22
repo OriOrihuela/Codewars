@@ -11,14 +11,20 @@ def infected_zeroes(list):
 
     pos = 0
     turns = 0
-    while pos < len(list) and list.count(0) != len(list):
-        
+    
+    while pos < len(list):
         if list[pos] == 0:
             list[pos + 1] = 0
-            if list.count(0) == len(list):
-                return turns
+            pos += 1
+        
+        if list[-1] == 0 and list[-2] == 1:
+            list[-2] = 0
+        
+        if list.count(0) == len(list):
             turns += 1
-        pos += 1
+            return turns
+        turns += 1
+    
     return turns
 
 if __name__ == "__main__":
