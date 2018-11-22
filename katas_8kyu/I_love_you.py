@@ -11,23 +11,17 @@ When the last petal was torn there were cries of excitement, dreams, surging tho
 Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where nb_petals > 0.'''
 
 def how_much_i_love_you(nb_petals):
-    list = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
     
-    final_word = ''
+    list = ['I love you','a little','a lot', 'passionately', 'madly' ,'not at all']
     
-    pos = 0 
+    pos = 0
     
-    while pos < nb_petals:
-        if list[pos] != nb_petals:
-            final_word = ''
-        else:
-            return final_word
-        final_word += list[pos]
-        if pos == 6:
-            list.reverse()
-            pos = 0
-        pos += 1
-    return final_word
+    for number in range(nb_petals):
+      answer = list[pos]
+      pos += 1
+      if pos == 6:
+        pos = 0
+    return answer
 
 
 if __name__ == "__main__":
