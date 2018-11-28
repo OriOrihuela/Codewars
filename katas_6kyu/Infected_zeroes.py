@@ -43,3 +43,4 @@ if __name__ == "__main__":
     assert infected_zeroes([0,1,1,1,0]) == 2
     assert infected_zeroes([0,1,1,1]) == 3
     assert infected_zeroes([1,1,1,0]) == 3
+    assert infected_zeroes([1,1,0,1,1]) == 2
