@@ -9,10 +9,14 @@ array_diff([1,2,2,2,3],[2]) == [1,3]'''
 
 
 def array_diff(a, b):
-    for number in b:
-        if number in a:
-            a.remove(number)
-    return a 
+    result = []
+    
+    for number in a:
+        if b == []:
+            return a
+        elif number not in b:
+            result.append(number)
+    return result 
 
 
 if __name__ == "__main__":
