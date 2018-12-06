@@ -7,15 +7,18 @@ pig_it('Hello world !')     # elloHay orldway !'''
 
 
 def pig_it(text):
+    
     text = text.split()
     word_to_add = ""
     string = ""
     
     for word in text:
+        
         if word == "?" or word == "!":
             word_to_add = word
             string += word_to_add + " "
             break
+        
         word_to_add = word[1:] + word[0] + "ay"
         string += word_to_add + " "
             
