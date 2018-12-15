@@ -29,6 +29,7 @@ if __name__ == "__main__":
     # TEST CASES #
 
 
+    
     result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
     assert wave("hello") == result
 
