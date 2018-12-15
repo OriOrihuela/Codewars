@@ -38,6 +38,7 @@ if __name__ == "__main__":
     # TEST CASES #
 
 
+    
     assert infected_zeroes([0]) == 0
     assert infected_zeroes([0,1,1,0]) == 1
     assert infected_zeroes([0,1,1,1,0]) == 2
