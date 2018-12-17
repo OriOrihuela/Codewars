@@ -30,6 +30,7 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
+    
     assert duplicate_count("abcde") == 0
     assert duplicate_count("abcdea") == 1
     assert duplicate_count("indivisibility") == 1

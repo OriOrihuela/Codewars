@@ -24,6 +24,7 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
+    
     assert domain_name("http://github.com/carbonfive/raygun") == "github" 
     assert domain_name("http://www.zombie-bites.com") == "zombie-bites"
     assert domain_name("https://www.cnet.com") == "cnet"
