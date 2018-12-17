@@ -15,34 +15,11 @@ So for this head: "------/------" you should return:
 ["-------------", "Unicorn!"] '''
 
 def bald(s):
-    final_array = []
-    str_1 = ""
-    str_2 = ""
-    
-    for char in s:
-        if char == "/":
-            str_1 += "-"
-        if char != "/":
-            str_1 += char
-    final_array.append(str_1)
-    
-    for char in s:
-        if s.count("/") == 0:
-            str_2 += "Clean!"
-            break
-        if char == "/" and s.count(char) == 1:
-            str_2 += "Unicorn!"
-            break
-        if char == "/" and s.count(char) == 2:
-            str_2 += "Homer!"
-            break
-        if char == "/" and s.count(char) in range(3, 6):
-            str_2 += "Careless!"
-            break
-        if char == "/" and s.count(char) > 5:
-            str_2 += "Hobo!"
-            break
-    final_array.append(str_2)
+    values = [0,1,2,3,4,5]
+    strings = ["Clean!", "Unicorn!", "Homer!", "Careless!", "Careless!", "Careless!"]
+    dictionary = dict(zip(values, strings))
+
+    return [len(s) * "-","Hobo!"] if s.count("/") > 5 else [len(s) * "-", dictionary[s.count("/")]]
         
         
 
