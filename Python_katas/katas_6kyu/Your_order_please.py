@@ -13,9 +13,6 @@ Examples
 
 def order(string):
     
-    if string == '':
-        return ''
-    
     string = string.split()
     new_string = ""
     looked_number = 1
@@ -28,6 +25,7 @@ def order(string):
                     looked_number += 1
         if looked_number > len(string):
             return new_string[:-1]
+    return ""
 
     
 
