@@ -21,5 +21,4 @@ frenchFries = 10
 
 totalPrice = (4 * 8) + (6 * 7) + (5 * 6.5) + (10 * 1.2)
 
-print (totalPrice)
-#>>> 118.5
+assert totalPrice == 118.5
