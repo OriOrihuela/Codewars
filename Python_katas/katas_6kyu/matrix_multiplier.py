@@ -55,19 +55,19 @@ def getMatrixProduct(matrizA, matrizB):
 
 if __name__ == "__main__":
 
-    ### CASOS TEST ###
+    ### TEST CASES ###
 
     matriz1 = [[1,6,7],
                 [5,8,9],
                 [6,7,9]]
     
-    #   multiplicar por   #
+    #   multiply by   #
 
     matriz2 = [[1,6,7,5,3],
                 [6,3,7,2,1],
                 [7,3,1,6,7]]
     
-    print(getMatrixProduct(matriz1, matriz2))
+    assert getMatrixProduct(matriz1, matriz2)
 
 
 
@@ -75,12 +75,12 @@ if __name__ == "__main__":
                 [5,8],
                 [6,7]]
     
-    #   multiplicar por   #
+    #   multiply by   #
 
     matriz4 = [[1,6,7,5,3,6,2],
                 [6,3,7,2,1,7,9]]
     
-    assert (getMatrixProduct(matriz3,matriz4))
+    assert getMatrixProduct(matriz3,matriz4)
 
 
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
                 [5,8,9,7,2],
                 [6,7,9,1,1]]
     
-    #   multiplicar por   #
+    #   multiply by   #
 
     matriz6 = [[1,6,7],
                 [6,3,7],
