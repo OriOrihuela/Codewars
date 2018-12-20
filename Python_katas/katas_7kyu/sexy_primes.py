@@ -22,11 +22,7 @@ if __name__ == '__main__':
     
     # TEST CASES #
 
-    print(sexy_prime(5, 11))
-    #>>> True
-    print(sexy_prime(13, 19))
-    #>>> True
-    print(sexy_prime(83, 89))
-    #>>> True
-    print(sexy_prime(1, 11))
-    #>>> False
+    assert sexy_prime(5, 11) == True 
+    assert sexy_prime(13, 19) == True
+    assert sexy_prime(83, 89) == True
+    assert sexy_prime(1, 11) == False
