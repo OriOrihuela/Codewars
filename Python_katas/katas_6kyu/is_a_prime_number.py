@@ -18,15 +18,9 @@ if __name__ == "__main__":
     # TEST CASES #
 
 
-    assert not(is_prime(0))
-    #>>> "0 is not prime"
-    assert not(is_prime(1))
-    #>>> "1 is not prime"
-    assert(is_prime(2))
-    #>>> "2 is prime"
-    assert not(is_prime(77))
-    #>>> "77 is not prime"
-    assert not(is_prime(54))
-    #>>> "54 is not prime"
-    assert not(is_prime(865))
-    #>>> "865 is not prime"
+    assert not is_prime(0)
+    assert not is_prime(1)
+    assert is_prime(2)
+    assert not is_prime(77)
+    assert not is_prime(54)
+    assert not is_prime(865)
