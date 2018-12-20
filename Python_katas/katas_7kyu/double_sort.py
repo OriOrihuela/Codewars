@@ -11,12 +11,14 @@ def db_sort(arr):
     arr_strings = []
     arr_numbers = []
     final_arr = []
+    
     for element in arr:
         if isinstance(element, int):
             arr_numbers.append(element)
             
         elif isinstance(element, str):
             arr_strings.append(element)
+    
     if arr_numbers and arr_strings:
         arr_numbers.sort()
         arr_strings.sort()
@@ -29,10 +31,6 @@ def db_sort(arr):
     if arr_strings and not arr_numbers:
         arr_strings.sort()
         return arr_strings
-    
-
-        
-    
     return final_arr
     
 if __name__ == "__main__":
