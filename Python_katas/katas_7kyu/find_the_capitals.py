@@ -16,11 +16,7 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
-    print(capitals('CodEWaRs'))
-    #>>> [0,3,4,6]
-    print(capitals('ElAINe'))
-    #>>> [0, 2, 3, 4]
-    print(capitals('NirVaNa'))
-    #>>> [0, 3, 5]
-    print(capitals('OroCHiMarU'))
-    #>>> [0, 3, 4, 6, 9]
+    print(capitals('CodEWaRs') == [0,3,4,6]
+    print(capitals('ElAINe') == [0,2,3,4]
+    print(capitals('NirVaNa') == [0,3,5]
+    print(capitals('OroCHiMarU') == [0,3,4,6,9]
