@@ -16,11 +16,7 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
-    print(disemvowel("This website is for losers LOL!"))
-    #>>> "Ths wbst s fr lsrs LL!"
-    print(disemvowel("I want to break free"))
-    #>>> "wnt t brk frr"
-    print(disemvowel("Welcome to the jungle"))
-    #>>> "Wlcm t th jngl"
-    print(disemvowel("Smells like teen spirit"))
-    #>>> "Smlls lk tn sprt"
+    assert disemvowel("This website is for losers LOL!") == "Ths wbst s fr lsrs LL!"
+    assert disemvowel("I want to break free") == "wnt t brk fr"
+    assert disemvowel("Welcome to the jungle") == "Wlcm t th jngl"
+    assert disemvowel("Smells like teen spirit") == "Smlls lk tn sprt"
