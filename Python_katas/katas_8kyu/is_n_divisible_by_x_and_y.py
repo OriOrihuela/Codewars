@@ -12,11 +12,7 @@ if __name__ == "__main__":
     
     # TEST CASES #
     
-    print(is_divisible(3,3,4))
-    #>>> False, test case not passed
-    print(is_divisible(12,3,4))
-    #>>> True, test case passed
-    print(is_divisible(8,3,4))
-    #>>> False, test case not passed
-    print(is_divisible(48,3,4))
-    #>>> True, test case passed
+    assert is_divisible(3,3,4) == False
+    assert is_divisible(12,3,4) == True
+    assert is_divisible(8,3,4) == False
+    assert is_divisible(48,3,4) == True
