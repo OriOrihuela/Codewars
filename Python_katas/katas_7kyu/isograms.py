@@ -16,15 +16,9 @@ if __name__ == "__main__":
     # TEST CASES #
 
 
-    print(is_isogram("Dermatoglyphics"))
-    #>>> True
-    print(is_isogram("isogram"))
-    #>>> True
-    print(is_isogram("aba"))
-    #>>> False
-    print(is_isogram("moOse"))
-    #>>> False
-    print(is_isogram("isIsogram"))
-    #>>> False
-    print(is_isogram(""))
-    #>>> True
+    assert is_isogram("Dermatoglyphics") == True 
+    assert is_isogram("isogram") == True
+    assert is_isogram("aba") == False
+    assert is_isogram("moOse") == False
+    assert is_isogram("isIsogram") == False
+    assert is_isogram("") == True
