@@ -1,5 +1,6 @@
 '''Write a function that accepts fight string consists of only small letters and return who wins the fight. 
-When the left side wins return "Left side wins!", when the right side wins return "Right side wins!", in other case return "Let's fight again!".'''
+When the left side wins return "Left side wins!", when the right side wins return "Right side wins!", in other case return 
+"Let's fight again!".'''
 
 def alphabet_war(fight):
     left_side = { "w":4, "p":3, "b":2, "s":1}
@@ -24,13 +25,8 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
-    print(alphabet_war("z"))
-    #>>> "Right side wins!"
-    print(alphabet_war("zdqmwpbs"))
-    #>>> Let's fight again!"
-    print(alphabet_war("wq"))
-    #>>> "Left side wins!"
-    print(alphabet_war("zzzzs"))
-    #>>> "Right side wins!"
-    print(alphabet_war("wwwwww"))
-    #>>> "Left side wins!"
+    assert alphabet_war("z") == "Right side wins!"
+    assert alphabet_war("zdqmwpbs") == "Let's fight again!"
+    assert alphabet_war("wq") == "Left side wins!"
+    assert alphabet_war("zzzzs") == "Right side wins!"
+    assert alphabet_war("wwwwww") == "Left side wins!"
