@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
-    print(lovefunc(1,4), ", result should be True")
-    print(lovefunc(2,2), ", result should be False")
-    print(lovefunc(0,1), ", result should be True")
-    print(lovefunc(0,0), ", result should be False")
+    assert lovefunc(1,4) == True
+    assert lovefunc(2,2) == False
+    assert lovefunc(0,1) == True
+    assert lovefunc(0,0) == False
