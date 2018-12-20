@@ -18,13 +18,8 @@ if __name__ == "__main__":
 
     # TEST CASES # 
 
-    print(positive_sum([1,2,3,4,5]))
-    #>>> 15
-    print(positive_sum([1,-2,3,4,5]))
-    #>>> 13
-    print(positive_sum([-1,2,3,4,-5]))
-    #>>> 9
-    print(positive_sum([]))
-    #>>> 0
-    print(positive_sum([-1,-2,-3,-4,-5]))
-    #>>> 0
+    assert positive_sum([1,2,3,4,5]) == 15
+    assert positive_sum([1,-2,3,4,5]) == 13
+    assert positive_sum([-1,2,3,4,-5]) == 9
+    assert positive_sum([]) == 0
+    assert positive_sum([-1,-2,-3,-4,-5]) == 0
