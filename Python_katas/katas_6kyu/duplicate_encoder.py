@@ -14,11 +14,7 @@ if __name__ == '__main__':
 
     # TEST CASES #
 
-    print(duplicate_encode("din"))
-    #>>> "((("
-    print(duplicate_encode("recede"))
-    #>>> "()()()"
-    print(duplicate_encode("Success"))
-    #>>> ")())())"
-    print(duplicate_encode("(( @"))
-    #>>> "))(("
+    assert duplicate_encode("din") == "((("
+    assert duplicate_encode("recede") == "()()()"
+    assert duplicate_encode("Success") == ")())())"
+    assert duplicate_encode("(( @") == "))(("
