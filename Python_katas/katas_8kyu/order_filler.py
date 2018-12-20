@@ -27,6 +27,7 @@ if __name__ == "__main__":
     'boardgame': 10,
     'leggos': 1,
     'doll': 5,}
-    print(fillable(stock, 'football', 3), ", result should be True")
-    print(fillable(stock, 'leggos', 2), ",  result should be False")
-    print(fillable(stock, 'action figure', 1), ", result should be False")
+    
+    assert fillable(stock, 'football', 3) == True
+    assert fillable(stock, 'leggos', 2) == False
+    assert fillable(stock, 'action figure', 1) == False
