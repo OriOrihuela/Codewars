@@ -29,23 +29,13 @@ if __name__ == "__main__":
     # TEST CASES #
 
     
-    print(validate_hello('hello'))
-    #>>> True
-    print(validate_hello('ciao bella!'))
-    #>>> True
-    print(validate_hello('salut'))
-    #>>> True
-    print(validate_hello('hallo, salut'))
-    #>>> True
-    print(validate_hello('hombre! Hola!'))
-    #>>> True
-    print(validate_hello('Hallo, wie geht\'s dir?'))
-    #>>> True
-    print(validate_hello('AHOJ!'))
-    #>>> True
-    print(validate_hello('czesc'))
-    #>>> True
-    print(validate_hello('meh'))
-    #>>> False
-    print(validate_hello('Ahoj'))
-    #>>> True
+    assert validate_hello('hello') == True
+    assert validate_hello('ciao bella!') == True
+    assert validate_hello('salut') == True
+    assert validate_hello('hallo, salut') == True
+    assert validate_hello('hombre! Hola!') == True
+    assert validate_hello('Hallo, wie geht\'s dir?') == True
+    assert validate_hello('AHOJ!') == True
+    assert validate_hello('czesc') == True
+    assert validate_hello('meh') == False
+    assert validate_hello('Ahoj') == True
