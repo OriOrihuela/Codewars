@@ -14,15 +14,14 @@ Example
 
 
 def duplicate_count(text):
-    text = text.lower()
+    text = text.upper()
+    characters_repeated = []
     
-    count = 0
-    for letter in text:
-        if text.count(letter) > 1:
-            count = 1
-        elif text.count(letter) > 2:
-            count += 1
-    return count 
+    for character in text:
+        if text.count(character) > 1 and character not in characters_repeated:
+            characters_repeated.append(character)
+    
+    return len(characters_repeated)
 
 
 
