@@ -21,7 +21,7 @@ def decodeMorse(morse_code):
         '--': 'M',     '-.': 'N',     '---': 'O',
         '.--.': 'P',   '--.-': 'Q',   '.-.': 'R',
      	'...': 'S',    '-': 'T',      '..-': 'U',
-        '...-': 'v',   '.--': 'W',    '-..-': 'X',
+        '...-': 'V',   '.--': 'W',    '-..-': 'X',
         '-.--': 'Y',   'Z': '--..',
         
         '-----': '0',  '.----': '1',  '..---': '2',
@@ -35,8 +35,6 @@ def decodeMorse(morse_code):
 
     for element in morse_code:
         if element == '':
-            if " " in final_string:
-                continue
             final_string += " "
         if element in CODE:
             final_string += CODE[element]
