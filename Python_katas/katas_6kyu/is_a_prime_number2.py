@@ -10,7 +10,7 @@ def is_prime(num):
       return False
   while (divisor < num) and (num % divisor != 0):
       divisor = divisor + 1
-  if num <= divisor:
+  if num == divisor:
       return True
   else:
       return False
@@ -21,9 +21,12 @@ if __name__ == "__main__":
 
     # TEST CASES #
 
-    assert not is_prime(0)
-    assert not is_prime(1)
-    assert is_prime(2)
-    assert not is_prime(77)
-    assert not is_prime(54)
-    assert not is_prime(865)
+    assert is_prime(13) == True
+    assert is_prime(757) == True
+    assert is_prime(919) == True
+    assert is_prime(0) == False
+    assert is_prime(1) == False
+    assert is_prime(2) == True
+    assert is_prime(77) == False
+    assert is_prime(54) == False
+    assert is_prime(865) == False
