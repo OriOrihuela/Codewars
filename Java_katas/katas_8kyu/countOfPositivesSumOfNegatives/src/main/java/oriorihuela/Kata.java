@@ -19,7 +19,6 @@ public class Kata {
             return input;
         }
         else {
-            int[] arrayToReturn = new int[2];
             int countOfPositiveOnes = 0;
             int sumatoryOfNegativeOnes = 0;
             for (int index = 0; index < input.length; index++) {
@@ -28,8 +27,7 @@ public class Kata {
                 else if (input[index] < 0) {
                     sumatoryOfNegativeOnes += input[index]; }
             }
-            arrayToReturn[0] = countOfPositiveOnes;
-            arrayToReturn[1] = sumatoryOfNegativeOnes;
+            int[] arrayToReturn = {countOfPositiveOnes, sumatoryOfNegativeOnes};
             return arrayToReturn;
         }
     }
