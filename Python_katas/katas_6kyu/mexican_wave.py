@@ -5,22 +5,20 @@ You will be passed a string and you must return that string in an array where an
 2.  If the character in the string is whitespace then pass over it as if it was an empty seat.'''
 
 
-def wave(str):
-
-    if str == "":
-        return []
-    result = []
-    pos = 0
+def wave(input):
+  Upper=input.upper()
+  array = []
+  i = 0
+  while i < len(input):
+    if input[i] != " ":
+        first = input[0:i]
+        last = input[i+1:(len(input))]
+        array.append(first + Upper[i] + last)
+    i+=1
     
-    while pos < len(str):
-        letter_being_replaced = str[pos]
-        while str[pos]:
-            new_letter = str[pos].upper()
-            break
-        new_str = str.replace(letter_being_replaced, new_letter, 1)
-        result.append(new_str)
-        pos += 1
-    return result
+    # Miki no me odies :D 
+    
+  return array
 
 
 if __name__ == "__main__":
